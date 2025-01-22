@@ -1,11 +1,10 @@
 {{!< default}}
 
 {{#post}}
-
 <main class="gh-main gh-outer">
     <div class="gh-inner">
         <article class="gh-article {{post_class}}">
-            {{#match @page.show_title_and_feature_image}}
+            {{#match @page.show_title_and_feature_image true}}
                 <header class="gh-article-header gh-canvas">
                     <h1 class="gh-article-title">{{title}}</h1>
                     {{#if custom_excerpt}}
@@ -21,5 +20,4 @@
         </article>
     </div>
 </main>
-
 {{/post}}
